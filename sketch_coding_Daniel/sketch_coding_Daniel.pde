@@ -12,13 +12,15 @@ void draw()  {
 void mouseClicked()  {
   
   background(127);
-  gomez(mouseX, mouseY);
+  gomez();
   sum ++;
   println(sum);
   textSize(64);
+  fill(0);
   text("Score: " + sum, width/2, height/2);
 }
 
 void gomez()  {
-  ellipse(width/2, height/2, width/4, height);
+  fill(50, 50, 50);
+  ellipse(mouseX, mouseY, width/4, height/4);
 }
